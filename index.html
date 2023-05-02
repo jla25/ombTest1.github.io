@@ -1,0 +1,486 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        
+        <title>Deals for Travel</title>
+        <meta name="theme-color" content="#1d5aa6">
+        <link href="images/favicon.png" rel="shortcut icon">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/hover-min.css">
+        <link rel="stylesheet" type="text/css" href="css/datepicker.css">
+        <link rel="stylesheet" type="text/css" href="css/chartist.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/verimail.min.js"></script>
+        <script type="text/javascript" src="js/datepicker.js"></script>
+        <script type="text/javascript" src="js/chartist.min.js"></script>
+        
+        <script type="text/javascript" src="js/custom-scripts.js"></script>
+        <script type="text/javascript" src="js/forms.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid">
+                <a href="#" class="logo" title="Deals for travel">
+                    <img src="images/logo-deals-for-travel.png" title="Deals for travel" alt="Deals for travel">
+                </a>
+
+                <a href="#" class="open-menu"><i class="fa fa-bars"></i></a>
+
+                <div class="right-header">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-down"></i> Brasil</a>
+                                <ul>
+                                    <li><a href="#">São Paulo</a></li>
+                                    <li><a href="#">Santa Catarina</a></li>
+                                    <li><a href="#">Rio de Janeiro</a></li>
+                                    <li><a href="#">Ceará</a></li>
+                                    <li><a href="#">Paraíba</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-down"></i> África</a>
+                                <ul>
+                                    <li><a href="#">Madagascar</a></li>
+                                    <li><a href="#">Cidade do Cabo</a></li>
+                                    <li><a href="#">Moçambique</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-down"></i> América Latina</a>
+                                <ul>
+                                    <li><a href="#">Argentina</a></li>
+                                    <li><a href="#">Chile</a></li>
+                                    <li><a href="#">Paraguai</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-down"></i> Ásia</a>
+                                <ul>
+                                    <li><a href="#">China</a></li>
+                                    <li><a href="#">Japão</a></li>
+                                    <li><a href="#">Indonésia</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-down"></i> Europa</a>
+                                <ul>
+                                    <li><a href="#">Paris</a></li>
+                                    <li><a href="#">Lisboa</a></li>
+                                    <li><a href="#">Roma</a></li>
+                                    <li><a href="#">Estolcomo</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-angle-down"></i> Oriente Médio</a>
+                                <ul>
+                                    <li><a href="#">Irã</a></li>
+                                    <li><a href="#">Israel</a></li>
+                                    <li><a href="#">Turquia</a></li>
+                                    <li><a href="#">Dubai</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <form method="post" class="searchform">
+                        <input type="text">
+                        <button type="submit" class="hvr-pop"><i class="icofont-search-1"></i></button>
+                    </form>
+
+                    <a href="#" class="btn-account hvr-pop"><i class="icofont-user-alt-3"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <section class="banner-page" style="background: url(images/banner-home.png) top center no-repeat; background-size: cover;"></section>
+
+        <section class="search-travel">
+            <div class="container">
+                <div class="box-search-travel">
+                    <form method="post" class="center-box-search-travel">
+                        <div class="item-field-form">
+                            <label class="group-check">
+                                <input type="radio" name="type-travel" value="Ida e Volta" checked="checked">
+                                <span>Ida e Volta</span>
+                            </label>
+
+                            <label class="group-check">
+                                <input type="radio" name="type-travel" value="Ida">
+                                <span>Ida</span>
+                            </label>
+
+                            <label class="group-check">
+                                <input type="radio" name="type-travel" value="Volta">
+                                <span>Volta</span>
+                            </label>
+                        </div>
+
+                        <div class="item-field-form">
+                            <div class="box-field field-origem">
+                                <input type="text" name="origem" placeholder="São Paulo (São Paulo)">
+                            </div>
+                        </div>
+
+                        <div class="item-field-form">
+                            <div class="box-field field-destino">
+                                <input type="text" name="destino" placeholder="Para onde?">
+                            </div>
+                        </div>
+
+                        <div class="item-field-form double-input">
+                            <div class="box-field">
+                                <input type="text" name="inicio" placeholder="05/05/2019" class="input-date datepicker-here">
+                            </div>
+                            <div class="box-field">
+                                <input type="text" name="fim" placeholder="05/05/2019" class="input-date datepicker-here">
+                            </div>
+                        </div>
+
+                        <div class="item-field-form">
+                            <div class="box-field field-quantidade">
+                                <select name="quantidade">
+                                    <option value="1 adulto, econômica">1 adulto, econômica</option>
+                                    <option value="2 adulto, econômica">2 adulto, econômica</option>
+                                    <option value="3 adulto, econômica">3 adulto, econômica</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="item-field-form">
+                            <button class="hvr-ripple-out">Buscar <i class="icofont-search-1"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-post">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="box-content-post">
+                            <div class="box-title">
+                                <div class="row">
+                                    <div class="col-xl-8">
+                                        <h2>As maravilhas da indonésia</h2>
+                                        <span class="subtitle">Conheça os melhores locais para visitar</span>
+                                    </div>
+
+                                    <div class="col-xl-4">
+                                        <div class="social">
+                                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>Ônibus público diurno: Autobus 46</h3>
+                            <p>É a opção mais barata e demorada de transporte entre o centro da cidade e o aeroporto. O Autobus número 46 liga os dois terminais do aeroporto à Plaza Espanya, uma praça que conta com estação de trem e metrô. Um bilhete único de ônibus custa €2,20 Mas se você optar por usar um T-10, a viagem custará apenas €1,02. O T-10 é um bilhete para 10 viagens que pode ser usado por várias pessoas e custa €10,20. Pode ser comprado somente nas máquinas das estações de metrô com dinheiro e cartão de crédito. Ou seja, se você decidir comprar um T-10 ao desembarcar em Barcelona para viajar da maneira mais barata, terá de se dirigir à estação de metrô, comprar o bilhete na máquina e só então caminhar até o ponto de ônibus do aeroporto. Além disso, o T-10 é válido para qualquer viagem urbana de metrô (somente na zona central) ou ônibus e é multipessoal, são 10 trajetos que podem ser usados durante toda sua estadia na cidade, por você e seus companheiros de viagem. Informe-se mais sobre T-10 neste link.</p>
+                            <h3>Ônibus público noturno: Autobus 3325</h3>
+                            <p>
+                                <strong>Horário de funcionamento:</strong> Todos os dias das 6:00 as 23:00.<br>
+                                <strong>Duração média do trajeto:</strong> 1 hora de trajeto entre aeroporto e Plaza Espanya e a espera média pelo ônibus é de aproximadamente meia hora.<br>
+                                <strong>Como comprar:</strong> Nas máquinas das estações de metrô, com cartão de crédito ou dinheiro.<br>
+                                <strong>Preço:</strong> €2,20 (bilhete único)<br>
+                                <strong>Vantagem:</strong> Opção mais barata.<br>
+                                <strong>Desvantagem:</strong> Trajeto mais demorado.
+                            </p>
+                            <img src="https://via.placeholder.com/1500x600">
+                            <h3>Ônibus público diurno: Autobus 46</h3>
+                            <p>É a opção mais barata e demorada de transporte entre o centro da cidade e o aeroporto. O Autobus número 46 liga os dois terminais do aeroporto à Plaza Espanya, uma praça que conta com estação de trem e metrô. Um bilhete único de ônibus custa €2,20 Mas se você optar por usar um T-10, a viagem custará apenas €1,02. O T-10 é um bilhete para 10 viagens que pode ser usado por várias pessoas e custa €10,20. Pode ser comprado somente nas máquinas das estações de metrô com dinheiro e cartão de crédito. Ou seja, se você decidir comprar um T-10 ao desembarcar em Barcelona para viajar da maneira mais barata, terá de se dirigir à estação de metrô, comprar o bilhete na máquina e só então caminhar até o ponto de ônibus do aeroporto. Além disso, o T-10 é válido para qualquer viagem urbana de metrô (somente na zona central) ou ônibus e é multipessoal, são 10 trajetos que podem ser usados durante toda sua estadia na cidade, por você e seus companheiros de viagem. Informe-se mais sobre T-10 neste link.</p>
+                            <a href="#" class="hvr-ripple-out">Encontre passagens para {destino}</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4">
+                        <section class="thumb-destinations thumb-destinations-page">
+                            <div class="row row-destination">
+                                <div class="col-lg-12">
+                                    <span class="title-destination recentes">Destinos<br> <strong>mais recentes</strong></span>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-12">
+                                            <div class="item-destination">
+                                                <img src="https://via.placeholder.com/300x300">
+                                                <div class="into-text">
+                                                    <h3>Como se locomover em Barcelona.</h3>
+                                                    <p>Todos os detalhes para se locomover em Barcelona.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-xl-12">
+                                            <div class="item-destination">
+                                                <img src="https://via.placeholder.com/300x300">
+                                                <div class="into-text">
+                                                    <h3>Como se locomover em Barcelona.</h3>
+                                                    <p>Todos os detalhes para se locomover em Barcelona.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-xl-12">
+                                            <div class="item-destination">
+                                                <img src="https://via.placeholder.com/300x300">
+                                                <div class="into-text">
+                                                    <h3>Como se locomover em Barcelona.</h3>
+                                                    <p>Todos os detalhes para se locomover em Barcelona.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row row-destination">
+                                <div class="col-lg-12 align-self-center">
+                                    <span class="title-destination destinos">Destinos<br> <strong>mais recentes</strong></span>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-xl-12">
+                                            <div class="item-destination">
+                                                <img src="https://via.placeholder.com/300x300">
+                                                <div class="into-text">
+                                                    <h3>Como se locomover em Barcelona.</h3>
+                                                    <p>Todos os detalhes para se locomover em Barcelona.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-12">
+                                            <div class="item-destination">
+                                                <img src="https://via.placeholder.com/300x300">
+                                                <div class="into-text">
+                                                    <h3>Como se locomover em Barcelona.</h3>
+                                                    <p>Todos os detalhes para se locomover em Barcelona.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-12">
+                                            <div class="item-destination">
+                                                <img src="https://via.placeholder.com/300x300">
+                                                <div class="into-text">
+                                                    <h3>Como se locomover em Barcelona.</h3>
+                                                    <p>Todos os detalhes para se locomover em Barcelona.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="separator-medida-certa">
+            <div class="container-fluid">
+                <span class="text">Sua viagem <br><strong>na medida <br>certa</strong></span>
+            </div>
+        </section>
+
+        <section class="thumbs-articles">
+            <div class="container-fluid">
+                <h2>Melhores datas <br><strong>Para visitar {nomecategoria}</strong></h2>
+
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="item-article">
+                            <img src="https://via.placeholder.com/700x500">
+                            <div class="box-text">
+                                <h3>Como se locomover com facilidade em Barcelona.</h3>
+                                <p>Saiba tudo sobre os caminhos das ruas de Barcelona.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="item-article">
+                            <img src="https://via.placeholder.com/700x500">
+                            <div class="box-text">
+                                <h3>Como se locomover com facilidade em Barcelona.</h3>
+                                <p>Saiba tudo sobre os caminhos das ruas de Barcelona.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="item-article">
+                            <img src="https://via.placeholder.com/700x500">
+                            <div class="box-text">
+                                <h3>Como se locomover com facilidade em Barcelona.</h3>
+                                <p>Saiba tudo sobre os caminhos das ruas de Barcelona.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="item-article">
+                            <img src="https://via.placeholder.com/700x500">
+                            <div class="box-text">
+                                <h3>Como se locomover com facilidade em Barcelona.</h3>
+                                <p>Saiba tudo sobre os caminhos das ruas de Barcelona.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="item-article">
+                            <img src="https://via.placeholder.com/700x500">
+                            <div class="box-text">
+                                <h3>Como se locomover com facilidade em Barcelona.</h3>
+                                <p>Saiba tudo sobre os caminhos das ruas de Barcelona.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="item-article">
+                            <img src="https://via.placeholder.com/700x500">
+                            <div class="box-text">
+                                <h3>Como se locomover com facilidade em Barcelona.</h3>
+                                <p>Saiba tudo sobre os caminhos das ruas de Barcelona.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="item-article">
+                            <img src="https://via.placeholder.com/700x500">
+                            <div class="box-text">
+                                <h3>Como se locomover com facilidade em Barcelona.</h3>
+                                <p>Saiba tudo sobre os caminhos das ruas de Barcelona.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="item-article">
+                            <img src="https://via.placeholder.com/700x500">
+                            <div class="box-text">
+                                <h3>Como se locomover com facilidade em Barcelona.</h3>
+                                <p>Saiba tudo sobre os caminhos das ruas de Barcelona.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="item-article">
+                            <img src="https://via.placeholder.com/700x500">
+                            <div class="box-text">
+                                <h3>Como se locomover com facilidade em Barcelona.</h3>
+                                <p>Saiba tudo sobre os caminhos das ruas de Barcelona.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="item-article">
+                            <img src="https://via.placeholder.com/700x500">
+                            <div class="box-text">
+                                <h3>Como se locomover com facilidade em Barcelona.</h3>
+                                <p>Saiba tudo sobre os caminhos das ruas de Barcelona.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="item-article">
+                            <img src="https://via.placeholder.com/700x500">
+                            <div class="box-text">
+                                <h3>Como se locomover com facilidade em Barcelona.</h3>
+                                <p>Saiba tudo sobre os caminhos das ruas de Barcelona.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="item-article">
+                            <img src="https://via.placeholder.com/700x500">
+                            <div class="box-text">
+                                <h3>Como se locomover com facilidade em Barcelona.</h3>
+                                <p>Saiba tudo sobre os caminhos das ruas de Barcelona.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="btn-all-articles">Mostre-me mais destinos incríveis</a>
+            </div>
+        </section>
+
+        <section class="wrap-graphic">
+            <div class="container-fluid">
+                <h2>Melhores datas <br><strong>Para visitar {nomecategoria}</strong></h2>
+
+                <div class="grafico grafico-indicacoes-vermelho"></div>
+            </div>
+        </section>
+
+        <section class="boxes">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3">
+                        <div class="item-box">
+                            <i class="icofont-sale-discount"></i>
+                            <h2>As melhores ofertas</h2>
+                            <p>Lorem ipsium dolor sit amet lorem ipsium dolor sit amet lorem ispium dolor sit amet lorem ipsium dolor sit amet lorem ispium dolor sit ametlorem ipsium dolor</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3">
+                        <div class="item-box">
+                            <i class="icofont-heart"></i>
+                            <h2>100% Transparente</h2>
+                            <p>Lorem ipsium dolor sit amet lorem ipsium dolor sit amet lorem ispium dolor sit amet lorem ipsium dolor sit amet lorem ispium dolor sit ametlorem ipsium dolor</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3">
+                        <div class="item-box">
+                            <i class="icofont-safety"></i>
+                            <h2>Confiável e gratuito</h2>
+                            <p>Lorem ipsium dolor sit amet lorem ipsium dolor sit amet lorem ispium dolor sit amet lorem ipsium dolor sit amet lorem ispium dolor sit ametlorem ipsium dolor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container-fluid">
+                <nav>
+                    <ul>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Anuncie</a></li>
+                    </ul>
+                </nav>
+
+                <span>Copyright © 2019 www.dealsfor.travel - Todos os direitos reservados.</span>
+            </div>
+        </footer>
+    </body>
+</html>
